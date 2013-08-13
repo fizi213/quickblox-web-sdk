@@ -20,6 +20,7 @@ var Users = require('./qbUsers');
 var Messages = require('./qbMessages');
 var Location = require('./qbLocation');
 var Data = require('./qbData');
+var Content = require('./qbContent');
 
 // IIEF to create a window scoped QB instance
 var QB = (function(QB, window){
@@ -47,6 +48,7 @@ QuickBlox.prototype.init = function init(appId, authKey, authSecret, debug) {
   this.messages = new Messages(this.service);
   this.location = new Location(this.service);
   this.data = new Data(this.service);
+  this.content = new Content(this.service);
   if (typeof appId === 'object') {
     debug = appId.debug;
     authSecret = appId.authSecret;
