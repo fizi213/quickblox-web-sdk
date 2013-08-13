@@ -157,6 +157,7 @@ var config = {
     geo: 'geodata',
     places: 'places',
     data: 'data',
+    content: 'blobs',
     chat: 'chat',
     type: '.json'
     },
